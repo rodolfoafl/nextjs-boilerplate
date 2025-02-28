@@ -7,9 +7,6 @@ import reactHooks from 'eslint-plugin-react-hooks'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {
-    extends: ['eslint:recommended', 'next'],
-  },
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: globals.browser } },
   {
