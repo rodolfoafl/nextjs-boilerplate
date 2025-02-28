@@ -7,6 +7,9 @@ import reactHooks from 'eslint-plugin-react-hooks'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
+  {
+    extends: ['eslint:recommended', 'next'],
+  },
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: globals.browser } },
   {
@@ -31,5 +34,10 @@ export default [
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off'
     }
+  },
+  {
+    ignores: [
+      '!.storybook', '!.jest', 'generators'
+    ]
   }
 ]
