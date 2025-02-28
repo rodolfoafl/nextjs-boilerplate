@@ -33,8 +33,6 @@ export default [
     }
   },
   {
-    ignores: [
-      '!.storybook', '!.jest', 'generators'
-    ]
+    ignores: ['!.storybook', '!.jest', 'generators']
   }
 ]
