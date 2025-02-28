@@ -12,7 +12,12 @@ const config: Config = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**'],
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/app/**',
+    '!src/types/**',
+    '!src/**/stories.tsx'
+  ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   // modulePaths: ['<rootDir>/src/*'],
